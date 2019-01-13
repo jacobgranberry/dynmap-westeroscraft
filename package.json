@@ -9,6 +9,7 @@
     "leaflet": "^1.4.0",
     "normalize.css": "^8.0.1",
     "react": "^16.7.0",
+    "react-burger-menu": "^2.6.1",
     "react-dom": "^16.7.0",
     "react-leaflet": "^2.2.0",
     "react-scripts": "2.1.3",
