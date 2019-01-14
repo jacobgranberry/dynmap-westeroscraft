@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/dynmap-westeroscraft/precache-manifest.f32ee5269211f0bb25e86099be027b1b.js"
+  "/dynmap-westeroscraft/precache-manifest.50ca067cbe6eae243edb92d6b7e252ee.js"
 );
 
 workbox.clientsClaim();
