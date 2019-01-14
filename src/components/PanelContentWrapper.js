@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Title = styled.h2`
     font-family: trajan-pro-3, serif;
     font-weight: 200;
+    text-align: center;
 `
 
 const PanelContentWrapper = (props) => (

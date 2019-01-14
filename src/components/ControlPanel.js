@@ -4,7 +4,6 @@ import colors from '../theme/colors';
 import Sidebar from './Sidebar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Logo from './Logo';
-import PanelContentWrapper from './PanelContentWrapper';
 
 const PanelWrapper = styled.div`
     background-color: ${colors.main};
@@ -24,9 +23,9 @@ const IconContainer = styled.div`
 
 const IconWrapper = styled.div`
     padding: 16px 8px;
-    cursor: pointer;
 
     &:hover path {
+        cursor: pointer;
         transition: all 0.3s ease;
         color: ${colors.yellow}
     }
@@ -37,13 +36,13 @@ class ControlPanel extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            menuOpen: false
+            menuOpen: false,
+            panel: ''
         }
     }
 
-    handleIconClick (e) {
-        e.preventDefault();
-        this.setState({menuOpen: !this.state.menuOpen})
+    handleIconClick (item) {
+        this.setState({menuOpen: !this.state.menuOpen, panel: item})
     }
 
     render() {
@@ -51,7 +50,7 @@ class ControlPanel extends Component {
             <Fragment>
                 <Sidebar
                     isOpen={this.state.menuOpen}
-                    content={<PanelContentWrapper text="Filters" />}
+                    content={this.state.panel}
                     />
                 <PanelWrapper>
                     <IconContainer>
@@ -61,7 +60,7 @@ class ControlPanel extends Component {
                         <div>
                             <IconWrapper>
                                 <FontAwesomeIcon
-                                    onClick={this.handleIconClick.bind(this)}
+                                    onClick={() => this.handleIconClick('Filters')}
                                     icon="globe"
                                     size="2x"
                                     color="white"
@@ -69,28 +68,28 @@ class ControlPanel extends Component {
                             </IconWrapper>
                             <IconWrapper>
                                 <FontAwesomeIcon
-                                    onClick={this.handleIconClick.bind(this)}
+                                    onClick={() => this.handleIconClick('Maps')}
                                     icon="layer-group"
                                     size="2x"
                                     color="white"/>
                             </IconWrapper>
                             <IconWrapper>
                                 <FontAwesomeIcon
-                                onClick={this.handleIconClick.bind(this)}
+                                onClick={() => this.handleIconClick('Players')}
                                 icon="user"
                                 size="2x"
                                 color="white"/>
                             </IconWrapper>
                             <IconWrapper>
                                 <FontAwesomeIcon
-                                onClick={this.handleIconClick.bind(this)}
+                                onClick={() => this.handleIconClick('Warps')}
                                 icon="street-view"
                                 size="2x"
                                 color="white"/>
                             </IconWrapper>
                             <IconWrapper>
                                 <FontAwesomeIcon
-                                onClick={this.handleIconClick.bind(this)}
+                                onClick={() => this.handleIconClick('Search')}
                                 icon="search"
                                 size="2x"
                                 color="white"/>
