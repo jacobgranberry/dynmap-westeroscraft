@@ -24,7 +24,7 @@ const IconContainer = styled.div`
 const IconWrapper = styled.div`
     padding: 16px 8px;
 
-    &:hover path {
+    &:hover svg {
         cursor: pointer;
         transition: all 0.3s ease;
         color: ${colors.yellow}
@@ -41,7 +41,8 @@ class ControlPanel extends Component {
         }
     }
 
-    handleIconClick (item) {
+    handleIconClick (e, item) {
+        e.preventDefault();
         this.setState({menuOpen: !this.state.menuOpen, panel: item})
     }
 
@@ -60,7 +61,7 @@ class ControlPanel extends Component {
                         <div>
                             <IconWrapper>
                                 <FontAwesomeIcon
-                                    onClick={() => this.handleIconClick('Filters')}
+                                    onClick={(e) => this.handleIconClick(e, 'Filters')}
                                     icon="globe"
                                     size="2x"
                                     color="white"
@@ -68,28 +69,28 @@ class ControlPanel extends Component {
                             </IconWrapper>
                             <IconWrapper>
                                 <FontAwesomeIcon
-                                    onClick={() => this.handleIconClick('Maps')}
+                                    onClick={(e) => this.handleIconClick(e, 'Maps')}
                                     icon="layer-group"
                                     size="2x"
                                     color="white"/>
                             </IconWrapper>
                             <IconWrapper>
                                 <FontAwesomeIcon
-                                onClick={() => this.handleIconClick('Players')}
+                                onClick={(e) => this.handleIconClick(e, 'Players')}
                                 icon="user"
                                 size="2x"
                                 color="white"/>
                             </IconWrapper>
                             <IconWrapper>
                                 <FontAwesomeIcon
-                                onClick={() => this.handleIconClick('Warps')}
+                                onClick={(e) => this.handleIconClick(e, 'Warps')}
                                 icon="street-view"
                                 size="2x"
                                 color="white"/>
                             </IconWrapper>
                             <IconWrapper>
                                 <FontAwesomeIcon
-                                onClick={() => this.handleIconClick('Search')}
+                                onClick={(e) => this.handleIconClick(e, 'Search')}
                                 icon="search"
                                 size="2x"
                                 color="white"/>

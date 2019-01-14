@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 
 const Title = styled.h2`
@@ -8,7 +8,10 @@ const Title = styled.h2`
 `
 
 const PanelContentWrapper = (props) => (
-    <Title>{props.text}</Title>
+    <Fragment>
+        <Title>{props.text}</Title>
+        {props.children}
+    </Fragment>
 )
 
 export default PanelContentWrapper

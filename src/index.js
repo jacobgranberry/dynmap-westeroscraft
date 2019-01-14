@@ -8,12 +8,17 @@ import { faGlobe,
          faStreetView,
          faSearch,
          faComment,
-         faCheck,
          faAngleDown,
          faAngleUp,
          faMap,
          faDiceD6,
          faDiceD20 } from '@fortawesome/free-solid-svg-icons';
+
+import {
+    faCheckSquare,
+    faSquare
+} from '@fortawesome/free-regular-svg-icons'
+
 import 'normalize.css';
 
 require('typeface-lato');
@@ -24,12 +29,13 @@ library.add( faGlobe,
     faStreetView,
     faSearch,
     faComment,
-    faCheck,
     faAngleDown,
     faAngleUp,
     faMap,
     faDiceD6,
-    faDiceD20 );
+    faDiceD20,
+    faCheckSquare,
+    faSquare );
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
