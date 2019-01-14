@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import colors from '../../theme/colors';
 
 const PanelItemWrapper = styled.div`
@@ -9,6 +9,10 @@ const PanelItemWrapper = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    ${props => props.roomy && css`
+        padding: 1rem;
+    `}
 `
 
 export default PanelItemWrapper;

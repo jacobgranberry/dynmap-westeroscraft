@@ -12,7 +12,6 @@ const items = labels.map((label, index) =>
 )
 
 const Filters = () => (
-
     <Fragment>
         <PanelContentWrapper text="Filters">
             {items}

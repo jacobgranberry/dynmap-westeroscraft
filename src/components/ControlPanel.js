@@ -61,7 +61,7 @@ class ControlPanel extends Component {
                         <div>
                             <IconWrapper>
                                 <FontAwesomeIcon
-                                    onClick={(e) => this.handleIconClick(e, 'Filters')}
+                                    onClick={(e) => this.handleIconClick(e, 'Maps')}
                                     icon="globe"
                                     size="2x"
                                     color="white"
@@ -69,7 +69,7 @@ class ControlPanel extends Component {
                             </IconWrapper>
                             <IconWrapper>
                                 <FontAwesomeIcon
-                                    onClick={(e) => this.handleIconClick(e, 'Maps')}
+                                    onClick={(e) => this.handleIconClick(e, 'Filters')}
                                     icon="layer-group"
                                     size="2x"
                                     color="white"/>

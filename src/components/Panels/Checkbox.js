@@ -22,7 +22,6 @@ class Checkbox extends Component {
                     <FontAwesomeIcon
                         onClick={this.handleCheckboxClick.bind(this)}
                         icon={['far', 'check-square']}
-                        size="2x"
                         color="#E4C778"
                         style={styles}
                     />
