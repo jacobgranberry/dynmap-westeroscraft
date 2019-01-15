@@ -4,6 +4,7 @@ import colors from '../theme/colors';
 import Sidebar from './Sidebar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Logo from './Logo';
+import { GlobeIcon, LayerIcon, UserIcon, WarpIcon, SearchIcon, ChatIcon } from '../components/FontAwesomeIcons';
 
 const PanelWrapper = styled.div`
     background-color: ${colors.main};
@@ -60,45 +61,24 @@ class ControlPanel extends Component {
                         </div>
                         <div>
                             <IconWrapper>
-                                <FontAwesomeIcon
-                                    onClick={(e) => this.handleIconClick(e, 'Maps')}
-                                    icon="globe"
-                                    size="2x"
-                                    color="white"
-                                />
+                                <GlobeIcon />
                             </IconWrapper>
                             <IconWrapper>
-                                <FontAwesomeIcon
-                                    onClick={(e) => this.handleIconClick(e, 'Filters')}
-                                    icon="layer-group"
-                                    size="2x"
-                                    color="white"/>
+                                <LayerIcon />
                             </IconWrapper>
                             <IconWrapper>
-                                <FontAwesomeIcon
-                                onClick={(e) => this.handleIconClick(e, 'Players')}
-                                icon="user"
-                                size="2x"
-                                color="white"/>
+                                <UserIcon />
                             </IconWrapper>
                             <IconWrapper>
-                                <FontAwesomeIcon
-                                onClick={(e) => this.handleIconClick(e, 'Warps')}
-                                icon="street-view"
-                                size="2x"
-                                color="white"/>
+                                <WarpIcon />
                             </IconWrapper>
                             <IconWrapper>
-                                <FontAwesomeIcon
-                                onClick={(e) => this.handleIconClick(e, 'Search')}
-                                icon="search"
-                                size="2x"
-                                color="white"/>
+                                <SearchIcon />
                             </IconWrapper>
                         </div>
                         <div>
                             <IconWrapper>
-                                <FontAwesomeIcon icon="comment" size="2x" color="white"/>
+                                <ChatIcon />
                             </IconWrapper>
                         </div>
                     </IconContainer>

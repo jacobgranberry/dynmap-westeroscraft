@@ -6,7 +6,8 @@ class Checkbox extends Component {
         checked: false
     }
 
-    handleCheckboxClick() {
+    handleCheckboxClick(e) {
+        e.preventDefault();
         this.setState({ checked: !this.state.checked })
     }
 
@@ -20,14 +21,14 @@ class Checkbox extends Component {
             <Fragment>
                 {checked ?
                     <FontAwesomeIcon
-                        onClick={this.handleCheckboxClick.bind(this)}
+                        onClick={(e) => this.handleCheckboxClick(e)}
                         icon={['far', 'check-square']}
                         color="#E4C778"
                         style={styles}
                     />
                     :
                     <FontAwesomeIcon
-                        onClick={this.handleCheckboxClick.bind(this)}
+                        onClick={(e) => this.handleCheckboxClick(e)}
                         icon={['far', 'square']}
                         color="#E4C778"
                         style={styles}

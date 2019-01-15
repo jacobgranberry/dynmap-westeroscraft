@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Map, Marker, Popup, TileLayer, ZoomControl } from 'react-leaflet'
+import { locationIcon } from '../components/CustomIcons';
 
 class LeafletMap extends Component {
     constructor() {
@@ -26,7 +27,7 @@ class LeafletMap extends Component {
               url='https://cartocdn-gusc.global.ssl.fastly.net//ramirocartodb/api/v1/map/named/tpl_756aec63_3adb_48b6_9d14_331c6cbc47cf/all/{z}/{x}/{y}.png'
             />
           <ZoomControl position="topright" />
-            <Marker position={position}>
+            <Marker position={position} icon={locationIcon}>
               <Popup>
                 A pretty CSS3 popup. <br/> Easily customizable.
               </Popup>
