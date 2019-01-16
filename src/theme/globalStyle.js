@@ -24,6 +24,24 @@ const GlobalStyle = createGlobalStyle`
         left: 0;
     }
 
+    .leaflet-tooltip {
+        font-family: 'Lato', sans-serif;
+        padding: 3px;
+        background-color: ${colors.black};
+        color: ${colors.white};
+        border: none;
+    }
+
+    .leaflet-tooltip::before {
+        content: none;
+    }
+
+    .leaflet-tooltip-bottom {
+        margin-top: 1px;
+    }
+
+/* =========Sidebar Styles============ */
+
 /* Position and sizing of clickable cross button */
     .bm-cross-button {
       height: 24px;

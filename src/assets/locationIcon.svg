@@ -6,8 +6,9 @@
             }
 
             .cls-2 {
-                fill: black;
+                fill: #E4C778;
                 text-align: center;
+                opacity: .8;
             }
         </style>
     </defs>

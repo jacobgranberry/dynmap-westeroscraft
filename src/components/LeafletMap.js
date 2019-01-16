@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Map, Marker, Popup, TileLayer, ZoomControl } from 'react-leaflet'
+import { Map, Marker, Popup, TileLayer, ZoomControl, Tooltip } from 'react-leaflet'
 import { locationIcon } from '../components/CustomIcons';
 
 class LeafletMap extends Component {
@@ -28,9 +28,7 @@ class LeafletMap extends Component {
             />
           <ZoomControl position="topright" />
             <Marker position={position} icon={locationIcon}>
-              <Popup>
-                A pretty CSS3 popup. <br/> Easily customizable.
-              </Popup>
+              <Tooltip permanent direction="bottom" opacity={.7}>King's Landing</Tooltip>
             </Marker>
         </Map>
       );
