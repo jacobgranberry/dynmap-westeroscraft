@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import colors from '../theme/colors';
 import Sidebar from './Sidebar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Logo from './Logo';
 import { GlobeIcon, LayerIcon, UserIcon, WarpIcon, SearchIcon, ChatIcon } from '../components/FontAwesomeIcons';
 
@@ -44,7 +43,7 @@ class ControlPanel extends Component {
 
     handleIconClick (e, item) {
         e.preventDefault();
-        this.setState({menuOpen: !this.state.menuOpen, panel: item})
+        this.setState({menuOpen: true, panel: item})
     }
 
     render() {
@@ -60,19 +59,19 @@ class ControlPanel extends Component {
                             <Logo />
                         </div>
                         <div>
-                            <IconWrapper>
+                            <IconWrapper onClick={(e) => this.handleIconClick(e, 'Maps')}>
                                 <GlobeIcon />
                             </IconWrapper>
-                            <IconWrapper>
+                            <IconWrapper onClick={(e) => this.handleIconClick(e, 'Filters')}>
                                 <LayerIcon />
                             </IconWrapper>
-                            <IconWrapper>
+                            <IconWrapper onClick={(e) => this.handleIconClick(e, 'Players')}>
                                 <UserIcon />
                             </IconWrapper>
-                            <IconWrapper>
+                            <IconWrapper onClick={(e) => this.handleIconClick(e, 'Warps')}>
                                 <WarpIcon />
                             </IconWrapper>
-                            <IconWrapper>
+                            <IconWrapper onClick={(e) => this.handleIconClick(e, 'Search')}>
                                 <SearchIcon />
                             </IconWrapper>
                         </div>
