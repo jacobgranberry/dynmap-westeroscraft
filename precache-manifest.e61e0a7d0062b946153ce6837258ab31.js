@@ -1,23 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "7fbbfd1610770d594aef639cfefdd0b0",
-    "url": "/dynmap-westeroscraft/static/media/lato-latin-700.7fbbfd16.woff2"
+    "revision": "b45e52f342dc29c8553f51a99f924871",
+    "url": "/dynmap-westeroscraft/static/media/lato-latin-400italic.b45e52f3.woff2"
   },
   {
-    "revision": "94a418a7baa06ed74a64",
-    "url": "/dynmap-westeroscraft/static/js/main.94a418a7.chunk.js"
+    "revision": "36ba56466cf387fdf930",
+    "url": "/dynmap-westeroscraft/static/js/main.36ba5646.chunk.js"
   },
   {
-    "revision": "0a06ba1bdf385495f2679324cfbedd13",
-    "url": "/dynmap-westeroscraft/static/media/lato-latin-700italic.0a06ba1b.woff"
+    "revision": "e792d6c62329e025ca1cbea793ba8de5",
+    "url": "/dynmap-westeroscraft/static/media/lato-latin-900italic.e792d6c6.woff"
   },
   {
     "revision": "d89340283c2a74156268",
     "url": "/dynmap-westeroscraft/static/js/runtime~main.d8934028.js"
   },
   {
+    "revision": "8338d97750e7b94c9160fafdcbfe531a",
+    "url": "/dynmap-westeroscraft/static/media/locationIcon.8338d977.svg"
+  },
+  {
     "revision": "f8028e61362a54aa64dcb26e8063d0d7",
     "url": "/dynmap-westeroscraft/static/media/lato-latin-100.f8028e61.woff2"
+  },
+  {
+    "revision": "7d718d7299ab7f9fab17d7d4f13ded57",
+    "url": "/dynmap-westeroscraft/static/media/lato-latin-300italic.7d718d72.woff2"
   },
   {
     "revision": "ef884f11c6adb5df51c446911612e7af",
@@ -26,10 +34,6 @@ self.__precacheManifest = [
   {
     "revision": "6ea8380326f67e10380953b188d96a2b",
     "url": "/dynmap-westeroscraft/static/media/lato-latin-100italic.6ea83803.woff"
-  },
-  {
-    "revision": "7d718d7299ab7f9fab17d7d4f13ded57",
-    "url": "/dynmap-westeroscraft/static/media/lato-latin-300italic.7d718d72.woff2"
   },
   {
     "revision": "bbbd26aeee9c5b967e35933bce02d358",
@@ -44,32 +48,28 @@ self.__precacheManifest = [
     "url": "/dynmap-westeroscraft/static/media/lato-latin-300italic.06eb177e.woff"
   },
   {
-    "revision": "b45e52f342dc29c8553f51a99f924871",
-    "url": "/dynmap-westeroscraft/static/media/lato-latin-400italic.b45e52f3.woff2"
-  },
-  {
-    "revision": "e792d6c62329e025ca1cbea793ba8de5",
-    "url": "/dynmap-westeroscraft/static/media/lato-latin-900italic.e792d6c6.woff"
-  },
-  {
     "revision": "c66215e09d2420885ad1a1f3eb2bac37",
     "url": "/dynmap-westeroscraft/static/media/lato-latin-700italic.c66215e0.woff2"
   },
   {
-    "revision": "f2de2c6ec69b0c11f1bc44c5348c2f35",
-    "url": "/dynmap-westeroscraft/static/media/lato-latin-900.f2de2c6e.woff2"
+    "revision": "7fbbfd1610770d594aef639cfefdd0b0",
+    "url": "/dynmap-westeroscraft/static/media/lato-latin-700.7fbbfd16.woff2"
   },
   {
     "revision": "fd67cf72cde7716bdadf8a3992b37fa2",
     "url": "/dynmap-westeroscraft/static/media/lato-latin-900italic.fd67cf72.woff2"
   },
   {
-    "revision": "ba2452bdc790a4fee05202eac3c092b3",
-    "url": "/dynmap-westeroscraft/static/media/lato-latin-300.ba2452bd.woff"
+    "revision": "f2de2c6ec69b0c11f1bc44c5348c2f35",
+    "url": "/dynmap-westeroscraft/static/media/lato-latin-900.f2de2c6e.woff2"
   },
   {
     "revision": "752c20224144760a496fb9e19a62f616",
     "url": "/dynmap-westeroscraft/static/media/lato-latin-100.752c2022.woff"
+  },
+  {
+    "revision": "ba2452bdc790a4fee05202eac3c092b3",
+    "url": "/dynmap-westeroscraft/static/media/lato-latin-300.ba2452bd.woff"
   },
   {
     "revision": "62fb51e9e645f63599238881b9de15dd",
@@ -88,15 +88,19 @@ self.__precacheManifest = [
     "url": "/dynmap-westeroscraft/static/media/lato-latin-900.d79dd066.woff"
   },
   {
-    "revision": "620b6633bbcf6753add1",
-    "url": "/dynmap-westeroscraft/static/js/1.620b6633.chunk.js"
+    "revision": "0a06ba1bdf385495f2679324cfbedd13",
+    "url": "/dynmap-westeroscraft/static/media/lato-latin-700italic.0a06ba1b.woff"
   },
   {
-    "revision": "620b6633bbcf6753add1",
-    "url": "/dynmap-westeroscraft/static/css/1.f1a9fc17.chunk.css"
+    "revision": "11e134474916bfb2faca",
+    "url": "/dynmap-westeroscraft/static/js/1.11e13447.chunk.js"
   },
   {
-    "revision": "510130f60966350cc8eaeff2a37021c2",
+    "revision": "11e134474916bfb2faca",
+    "url": "/dynmap-westeroscraft/static/css/1.dd77cdcd.chunk.css"
+  },
+  {
+    "revision": "98b8546cbe055a7712cc31ca2abf2ff5",
     "url": "/dynmap-westeroscraft/index.html"
   }
 ];
