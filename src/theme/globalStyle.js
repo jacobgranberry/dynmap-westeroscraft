@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
-    body {
+    body, html {
         font-family: 'Lato', sans-serif;
         background-color: ${colors.main};
         margin: 0;
@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .leaflet-container {
+        font-family: 'Lato', sans-serif;
         height: 1080px;
         width: 100%;
         position: relative;
@@ -25,7 +26,6 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .leaflet-tooltip {
-        font-family: 'Lato', sans-serif;
         padding: 3px;
         background-color: ${colors.black};
         color: ${colors.white};

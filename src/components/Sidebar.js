@@ -8,22 +8,13 @@ import Search from './Panels/Search';
 
 class Sidebar extends Component {
 
-    renderContent(param) {
-        switch(param) {
-            case 'Filters':
-              return <Filters />;
-            case 'Warps':
-                return <Warps />;
-            case 'Maps':
-                return <Maps />;
-            case 'Players':
-                return <Players />;
-            case 'Search':
-                return <Search />;
-            default:
-              return null;
-          }
-    }
+    renderContent = (panel) => ({
+            "Filters": <Filters />,
+            "Warps": <Warps />,
+            "Maps": <Maps />,
+            "Players": <Players />,
+            "Search": <Search />
+    })[panel] || null;
 
     render() {
         return (

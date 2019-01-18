@@ -1,35 +1,57 @@
 import React, { Component } from 'react';
-import { Map, Marker, Popup, TileLayer, ZoomControl, Tooltip } from 'react-leaflet'
+import { Map, Marker, TileLayer, ZoomControl, Tooltip, LayersControl, LayerGroup } from 'react-leaflet'
 import { locationIcon } from '../components/CustomIcons';
+import data from '../fakeData';
+
+
+
 
 class LeafletMap extends Component {
     constructor() {
       super()
       this.state = {
-        lat: 5,
-        lng: 20,
-        zoom: 6,
+        center: [5, 15],
+        lat: 3.65,
+        lng: 19.15,
+        zoom: 4.5,
         maxBounds: [[50, -30], [-45, 100]]
       }
     }
 
     render() {
-      const position = [this.state.lat, this.state.lng];
+
+      const types = [...new Set(data.map(loc => loc.type))]
+
       return (
         <Map
-          zoomControl={false}
-          center={position}
-          zoom={this.state.zoom}
-          maxBounds={this.state.maxBounds}
-          maxZoom={10}
+        zoomControl={false}
+        center={this.state.center}
+        zoom={this.state.zoom}
+        maxBounds={this.state.maxBounds}
+        maxZoom={10}
         >
+          <LayersControl>
             <TileLayer
               url='https://cartocdn-gusc.global.ssl.fastly.net//ramirocartodb/api/v1/map/named/tpl_756aec63_3adb_48b6_9d14_331c6cbc47cf/all/{z}/{x}/{y}.png'
             />
-          <ZoomControl position="topright" />
-            <Marker position={position} icon={locationIcon}>
-              <Tooltip permanent direction="bottom" opacity={.7}>King's Landing</Tooltip>
-            </Marker>
+            <ZoomControl position="topright" />
+
+            {types.map(type =>
+              data.filter(loc => loc.type === type)
+              .map(({id, lat, lng, name}) =>
+                <LayersControl.Overlay name={type}>
+                  <LayerGroup>
+                  <Marker key={id} position={[lat, lng]} icon=
+                    {locationIcon}>
+                    <Tooltip permanent direction="bottom" opacity={.6}>
+                        {name}
+                    </Tooltip>
+                </Marker>
+                  </LayerGroup>
+                </LayersControl.Overlay>
+                )
+              )}
+          </LayersControl>
         </Map>
       );
     }
