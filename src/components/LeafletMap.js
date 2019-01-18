@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { Map, Marker, TileLayer, ZoomControl, Tooltip, LayersControl, LayerGroup } from 'react-leaflet'
 import { locationIcon } from '../components/CustomIcons';
 import data from '../fakeData';
-
-
-
+import { startCase, toLower } from 'lodash'
+import ControlPanel from '../components/ControlPanel';
 
 class LeafletMap extends Component {
     constructor() {
@@ -20,9 +19,26 @@ class LeafletMap extends Component {
 
     render() {
 
-      const types = [...new Set(data.map(loc => loc.type))]
+      const types = [...new Set(data.map(loc => loc.type))];
+
+      const group = types.map(type =>
+        data.filter(loc => loc.type === type)
+        .map(({id, lat, lng, name}) =>
+          <LayersControl.Overlay name={startCase(toLower(type))}>
+            <LayerGroup>
+            <Marker key={id} position={[lat, lng]} icon=
+              {locationIcon}>
+              <Tooltip permanent direction="bottom" opacity={.6}>
+                  {name}
+              </Tooltip>
+          </Marker>
+            </LayerGroup>
+          </LayersControl.Overlay>
+          ));
 
       return (
+        <>
+        <ControlPanel />
         <Map
         zoomControl={false}
         center={this.state.center}
@@ -36,23 +52,10 @@ class LeafletMap extends Component {
             />
             <ZoomControl position="topright" />
 
-            {types.map(type =>
-              data.filter(loc => loc.type === type)
-              .map(({id, lat, lng, name}) =>
-                <LayersControl.Overlay name={type}>
-                  <LayerGroup>
-                  <Marker key={id} position={[lat, lng]} icon=
-                    {locationIcon}>
-                    <Tooltip permanent direction="bottom" opacity={.6}>
-                        {name}
-                    </Tooltip>
-                </Marker>
-                  </LayerGroup>
-                </LayersControl.Overlay>
-                )
-              )}
+           {group}
           </LayersControl>
         </Map>
+        </>
       );
     }
   }

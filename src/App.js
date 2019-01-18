@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LeafletMap from './components/LeafletMap';
 import GlobalStyle from './theme/globalStyle';
-import ControlPanel from './components/ControlPanel';
+// import ControlPanel from './components/ControlPanel';
 
 
 
@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <>
       <GlobalStyle />
-      <ControlPanel />
+      {/* <ControlPanel /> */}
       <LeafletMap />
       </>
     )
