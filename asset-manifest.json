@@ -1,15 +1,15 @@
 {
-  "main.js": "/dynmap-westeroscraft/static/js/main.36ba5646.chunk.js",
-  "main.js.map": "/dynmap-westeroscraft/static/js/main.36ba5646.chunk.js.map",
-  "static/css/1.dd77cdcd.chunk.css": "/dynmap-westeroscraft/static/css/1.dd77cdcd.chunk.css",
-  "static/js/1.11e13447.chunk.js": "/dynmap-westeroscraft/static/js/1.11e13447.chunk.js",
-  "static/js/1.11e13447.chunk.js.map": "/dynmap-westeroscraft/static/js/1.11e13447.chunk.js.map",
+  "main.js": "/dynmap-westeroscraft/static/js/main.9c73267b.chunk.js",
+  "main.js.map": "/dynmap-westeroscraft/static/js/main.9c73267b.chunk.js.map",
+  "static/css/1.3950e723.chunk.css": "/dynmap-westeroscraft/static/css/1.3950e723.chunk.css",
+  "static/js/1.0587019f.chunk.js": "/dynmap-westeroscraft/static/js/1.0587019f.chunk.js",
+  "static/js/1.0587019f.chunk.js.map": "/dynmap-westeroscraft/static/js/1.0587019f.chunk.js.map",
   "runtime~main.js": "/dynmap-westeroscraft/static/js/runtime~main.d8934028.js",
   "runtime~main.js.map": "/dynmap-westeroscraft/static/js/runtime~main.d8934028.js.map",
   "static/media/index.css": "/dynmap-westeroscraft/static/media/lato-latin-900italic.e792d6c6.woff",
-  "static/media/locationIcon.svg": "/dynmap-westeroscraft/static/media/locationIcon.8338d977.svg",
-  "static/css/1.dd77cdcd.chunk.css.map": "/dynmap-westeroscraft/static/css/1.dd77cdcd.chunk.css.map",
+  "static/media/locationIcon.svg": "/dynmap-westeroscraft/static/media/locationIcon.f72ecb3c.svg",
+  "static/css/1.3950e723.chunk.css.map": "/dynmap-westeroscraft/static/css/1.3950e723.chunk.css.map",
   "index.html": "/dynmap-westeroscraft/index.html",
-  "precache-manifest.e61e0a7d0062b946153ce6837258ab31.js": "/dynmap-westeroscraft/precache-manifest.e61e0a7d0062b946153ce6837258ab31.js",
+  "precache-manifest.59ef2c63093b66d25b0c4d77dacc4073.js": "/dynmap-westeroscraft/precache-manifest.59ef2c63093b66d25b0c4d77dacc4073.js",
   "service-worker.js": "/dynmap-westeroscraft/service-worker.js"
 }
